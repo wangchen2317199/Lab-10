@@ -1,0 +1,35 @@
+<ion-view view-title="Register">
+  <ion-content class="padding">
+          <div class="list card">
+            <div class="list">
+                <div class="item row">
+                  <div class="col">
+                      <label class="item-input item-floating-label">
+                       <span class="input-label">Email</span>
+                        <input id="Email" type="text" placeholder="Email" ng-model="user.email" required="required" >
+                      </label>
+                  </div>
+                </div>
+              <div class="item row">
+                  <div class="col">
+                      <label class="item-input item-floating-label">
+                       <span class="input-label">Username</span>
+                        <input id="username" type="text" placeholder="Username" ng-model="user.username" required="required" >
+                      </label>
+                  </div>
+                </div>
+                <div class="item row">
+                  <div class="col"> 
+                       <label class="item-input item-floating-label">
+                           <span class="input-label">Password</span>
+                            <input id="password" type="password" placeholder="Password" ng-model="user.password" required="required" >
+                      </label>
+                      </div>
+                </div>   
+              </div>
+         </div>   
+     <button id='register' name="register" class="button button-block button-positive" ng-click = "register(user.email, user.username, user.password)">Create</button>
+    <p > {{msg}}</p>
+  </ion-content>
+  </ion-view>
+

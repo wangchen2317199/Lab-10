@@ -1,0 +1,19 @@
+<ion-view view-title="Update">
+  <ion-content class="padding">
+          <div class="list card">
+            <div class="list">
+                <div class="item row">
+                  <div class="col"> 
+                       <label class="item-input validated">
+                            <input id="NewPassword" type="password" placeholder="New password" ng-model="user.NewPassword" required="required" >
+                      </label>
+                      </div>
+                </div>   
+              </div>
+         </div>   
+     <button id='update' name="update" class="button button-block button-positive" ng-click = "update(user.NewPassword)">UpdatePassword</button>
+    <button id='delete' name="delete" class="button button-block button-assertive" ng-click = "delete()">Delete account</button>
+    <p > {{msg}}</p>
+  </ion-content>
+  </ion-view>
+

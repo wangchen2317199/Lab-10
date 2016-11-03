@@ -1,0 +1,38 @@
+ <ion-view view-title="Expense management">
+      <ion-nav-buttons side="right">
+        <a class="button button-icon icon ion-person" href="#/tab/dash/DiabetesDetector/Update"></a>
+    </ion-nav-buttons> 
+  <ion-content class="padding"> 
+       <div class="list card">
+           <div class="list"> 
+                <div class="item row">
+                  <div class="col">
+                      <label class="item-input item-floating-label">
+                       <span class="input-label">Income per month</span>
+                        <input id="income" type="text" placeholder="Please input your income (per month)" ng-model="diaParameterF" required="required" >
+                      </label>
+                  </div>
+                </div>
+                <div class="item row">
+                  <div class="col">
+                      <label class="item-input item-floating-label">
+                       <span class="input-label">Expense per month</span>
+                        <input id="expense" type="text" placeholder="Pleaser input your expense (per month)" ng-model="diaParameter2H">
+                      </label>
+                  </div>
+                </div>
+  
+       </div>
+             </div>
+<button id="diadetect" class="button button-block button-positive" ng-click="diaDetectView(diaDetectLogic(diaParameterF,diaParameter2H))">
+  Suggest
+    </button>
+ <div id="result" class="hide">
+  <div class="item item-text-wrap">
+</div>
+</div> 
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+<div id="suggestion" class="hide">
+  </div>
+  </ion-content>
+</ion-view>
